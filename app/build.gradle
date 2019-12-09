@@ -40,9 +40,4 @@ dependencies {
 greendao {
     //数据库版本号
     schemaVersion 1
-//    daoPackage 'com.yb.greendaodemo.database.greenDao.db'
-//    // 设置DaoMaster、DaoSession、Dao 包名
-//    targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录,请注意，这里路径用/不要用.
-//    generateTests false //设置为true以自动生成单元测试。
-//    targetGenDirTests 'src/androidTest/java' //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
 }
