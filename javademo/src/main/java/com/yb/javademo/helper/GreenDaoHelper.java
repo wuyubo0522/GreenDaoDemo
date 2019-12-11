@@ -148,4 +148,11 @@ public class GreenDaoHelper {
     public void deleteAll() {
         mStaffEntityDao.deleteAll();
     }
+
+    /**关闭数据库的读写*/
+    public void onClose(){
+        if (mHelper!=null){
+            mHelper.close();
+        }
+    }
 }

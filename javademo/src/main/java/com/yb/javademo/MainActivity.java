@@ -3,13 +3,11 @@ package com.yb.javademo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.yb.javademo.entity.StaffEntity;
 import com.yb.javademo.helper.GreenDaoHelper;
-
 import java.util.List;
 
 /**
@@ -87,5 +85,12 @@ public class MainActivity extends AppCompatActivity {
                 .append("\n");
         }
         mTvData.setText(sb.toString());
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // 关闭数据库读写
+        mHelper.onClose();
     }
 }
