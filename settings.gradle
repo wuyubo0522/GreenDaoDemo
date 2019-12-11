@@ -1,2 +1,2 @@
-include ':app', ':javademo'
+include  ':javademo'
 rootProject.name='GreenDaoDemo'
