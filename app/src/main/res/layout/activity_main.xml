@@ -6,13 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/mBtnAdd"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="5dp"
+        android:text="增"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toStartOf="@id/mBtnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <Button
+        android:id="@+id/mBtnDelete"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="14dp"
+        android:text="删"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/mBtnAdd"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/mBtnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="5dp"
+        android:text="改"
+        android:textColor="#FFFFFF"
+        android:background="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toStartOf="@id/mBtnSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mBtnAdd"/>
+
+    <Button
+        android:id="@+id/mBtnSearch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="14dp"
+        android:text="查"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/mBtnUpdate"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mBtnDelete"/>
+
+    <TextView
+        android:id="@+id/mTvData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mBtnUpdate"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

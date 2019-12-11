@@ -21,6 +21,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    androidExtensions {
+        experimental = true
+    }
+
+    // greendao数据库配置
+    greendao {
+        //数据库版本号
+        schemaVersion 1
+    }
 }
 
 dependencies {
@@ -36,8 +46,4 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
 }
 
-// greendao数据库配置
-greendao {
-    //数据库版本号
-    schemaVersion 1
-}
+

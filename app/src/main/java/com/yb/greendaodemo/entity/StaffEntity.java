@@ -89,4 +89,15 @@ public class StaffEntity {
     public void setSex(String sex) {
         this.sex = sex;
     }
+
+    @Override
+    public String toString() {
+        return "StaffEntity{" +
+                "id=" + id +
+                ", staffNo=" + staffNo +
+                ", staffName='" + staffName + '\'' +
+                ", age=" + age +
+                ", sex='" + sex + '\'' +
+                '}';
+    }
 }
